@@ -1,0 +1,18 @@
+<Configuration status="warn"><!-- use status="trace" for troubleshooting -->
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%m%n"/>
+        </Console>
+        <File name="FILE" fileName="myapp.log">
+            <PatternLayout>
+                <pattern>%d %p [%t] %c{1.} %m%n</pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="STDOUT" level="ERROR" />
+            <AppenderRef ref="FILE" />
+        </Root>
+    </Loggers>
+</Configuration>
