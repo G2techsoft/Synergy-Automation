@@ -41,7 +41,7 @@ public class Hooks extends Driverclass{
         // Log.info("before scenario started successfully");
     }
 
-    @After(order = 0)
+    @After(order = 1)
     public void AfterScenario(Scenario s) throws InterruptedException {
         if (s.isFailed()){
             TakesScreenshot ts = (TakesScreenshot) driver;
@@ -63,15 +63,15 @@ public class Hooks extends Driverclass{
 
 
 
-//    @After(order = 0)
-//    public void logoutfromApplication() throws InterruptedException {
-////        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-////       driver.findElement(By.xpath("//*[text()='Paul Collings']")).click();
-////        driver.findElement(By.xpath("//*[text()='Logout']")).click();
-//       driver.close();
-//       driver=null;
-//
-//    }
+    @After(order = 0)
+    public void logoutfromApplication() throws InterruptedException {
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//       driver.findElement(By.xpath("//*[text()='Paul Collings']")).click();
+//        driver.findElement(By.xpath("//*[text()='Logout']")).click();
+       driver.close();
+       driver=null;
+
+    }
 
 }
 

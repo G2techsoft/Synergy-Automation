@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions
         (
-                features = {"src/test/java/Features/Orangehrm.feature"},
+                features = {"src/test/java/Features/Login.feature"},
                 glue = {"Glues"},
                 monochrome = true,
                 dryRun =false,

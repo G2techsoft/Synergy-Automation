@@ -1,8 +1,0 @@
-Create feature file with 10 scenarios
-scenarios include tags,test data with values ,with only string,with header and values,with example
-pages should follow page object module with singleton pattern
-stepdef will follow optional with lambda
-locators should be stored in properties file
-locators will be called into stepdef by properties and should have common method for that
-test will run through test runner file
-reporting should be happen in cucumber extent report

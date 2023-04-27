@@ -32,10 +32,10 @@
 </ul>
 <ul class="nav-right">
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Synergy Automation Test report</span></a>
+<a href="#"><span class="badge badge-primary">SYNERGY AUTOMATION</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 25, 2023 09:04:07</span></a>
+<a href="#"><span class="badge badge-primary">Apr 27, 2023 10:21:58</span></a>
 </li>
 </ul>
 </div>
@@ -45,16 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('category-view')">
-<a id="nav-category" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -76,39 +66,33 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
-</ul>
-</li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
-<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@login</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Login to OrangeHRM</p>
+            <p class="name">To verify the Synergy Login function</p>
             <p class="text-sm">
-              <span>9:04:08 AM</span> / <span>00:00:26:774</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:21:59 AM</span> / <span>00:02:00:466</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Login to OrangeHRM</h5>
-<span class='badge badge-success'>04.25.2023 9:04:08 AM</span>
-<span class='badge badge-danger'>04.25.2023 9:04:35 AM</span>
-<span class='badge badge-default'>00:00:26:774</span>
+<h5 class="test-status text-pass">To verify the Synergy Login function</h5>
+<span class='badge badge-success'>04.27.2023 10:21:59 AM</span>
+<span class='badge badge-danger'>04.27.2023 10:24:00 AM</span>
+<span class='badge badge-default'>00:02:00:466</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -120,7 +104,123 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login with String as input</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate login function using invalid creds</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Validate login function using invalid creds</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Glues.Hooks.beforeScenario(io.cucumber.java.Scenario)</span>
+      <div><span class='badge white-text black'>Scenario Validate login function using invalid creds Started execution</span>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given verify user launched synergy url</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user enter "navamanikandan" and "nava@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click submit button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user get error message successfully</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Glues.Hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div><span class='badge white-text green'>Scenario Validate login function using invalid creds is passed</span>
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Validate login function using invalid creds</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Glues.Hooks.beforeScenario(io.cucumber.java.Scenario)</span>
+      <div><span class='badge white-text black'>Scenario Validate login function using invalid creds Started execution</span>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given verify user launched synergy url</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user enter "navamanikandan@g2techsoft.com" and "navam@123456"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click submit button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user get error message successfully</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Glues.Hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div><span class='badge white-text green'>Scenario Validate login function using invalid creds is passed</span>
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>Validate login function using valid creds</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -130,87 +230,40 @@
           <div class="card-body">
               <div class="step pass-bg" title="BEFORE">
                 <span>Glues.Hooks.beforeScenario(io.cucumber.java.Scenario)</span>
-      <div><span class='badge white-text black'>Scenario Login with String as input Started execution</span>
+      <div><span class='badge white-text black'>Scenario Validate login function using valid creds Started execution</span>
       </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="Glues.Orangeglue.loginto_orangehrm_with_username_as(java.lang.String)">
-                <span>Given Loginto Orangehrm with username as "Admin"</span>
-      <div><span class='badge white-text black'>Username is Admin</span>
-      </div>
+              <div class="step pass-bg" title="Glues.LoginGlue.verify_user_launched_synergy_url()">
+                <span>Given verify user launched synergy url</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="Glues.Orangeglue.password_as(java.lang.String)">
-                <span>Then password as "admin123"</span>
-      <div><span class='badge white-text black'>password is admin123</span>
-      </div>
+              <div class="step pass-bg" title="Glues.LoginGlue.user_enter_and(java.lang.String,java.lang.String)">
+                <span>When user enter "651" and "India@2021"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="Glues.Orangeglue.click_on_loginbutton()">
-                <span>And click on loginbutton</span>
-      <div><span class='badge white-text black'>Clicked on login button</span>
-      </div>
+              <div class="step pass-bg" title="Glues.LoginGlue.user_click_submit_button()">
+                <span>And User click submit button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>Glues.Hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+              <div class="step pass-bg" title="Glues.LoginGlue.verify_user_navigated_next_page_successfully()">
+                <span>Then verify user navigated next page successfully</span>
       <div>
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
-      <div><span class='badge white-text green'>Scenario Login with String as input is passed</span>
-      </div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Verify the totle of the page</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="BEFORE">
-                <span>Glues.Hooks.beforeScenario(io.cucumber.java.Scenario)</span>
-      <div><span class='badge white-text black'>Scenario Verify the totle of the page Started execution</span>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="Glues.Orangeglue.verify_the_title_of_the_page_is(java.lang.String)">
-                <span>Given Verify the title of the page is "Oran1geHRM"</span>
-      <div>
-        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<Oran[]geHRM> but was:<Oran[1]geHRM>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at Glues.Orangeglue.verify_the_title_of_the_page_is(Orangeglue.java:74)
-	at ✽.Verify the title of the page is "Oran1geHRM"(file:///C:/Users/Balam/IdeaProjects/MyFrame/src/test/java/Features/Orangehrm.feature:10)
-</textarea>
-      
       </div>
               </div>
               <div class="step pass-bg" title="AFTER">
                 <span>Glues.Hooks.AfterScenario(io.cucumber.java.Scenario)</span>
       <div>
           <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded2.png' src="../embedded2.png">
+<img data-featherlight='../embedded3.png' src="../embedded3.png">
     
     </div></div>
 </div>
-      <div><span class='badge white-text red'>Scenario Verify the totle of the page is failed</span>
+      <div><span class='badge white-text green'>Scenario Validate login function using valid creds is passed</span>
       </div>
       <div>
       </div>
@@ -230,134 +283,30 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.junit.ComparisonFailure</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.junit.ComparisonFailure</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>09:04:33 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='10'>Given Verify the title of the page is "Oran1geHRM"</a>
-<div class="">
-<span class="badge badge-default">Login to OrangeHRM.Verify the totle of the page.Given Verify the title of the page is "Oran1geHRM"</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@login</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@login</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:04:08 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Login with String as input</a>
-<div class="">
-<span class="badge badge-default">Login to OrangeHRM.Login with String as input</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="container-fluid p-4 view dashboard-view">
+<div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 25, 2023 09:04:07</h3>
+<h3>Apr 27, 2023 10:21:58</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 25, 2023 09:04:35</h3>
+<h3>Apr 27, 2023 10:24:00</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -373,12 +322,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -396,9 +345,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='50%'><b>1</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -416,9 +365,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='87%'><b>7</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>18</b> steps passed</small></div>
 <div>
-<small data-tooltip='12%'><b>1</b> steps failed,
+<small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -435,45 +384,28 @@
 </div></div>
 <script>
 var timeline = {
-"Login to OrangeHRM":26.774
+"To verify the Synergy Login function":120.466
 };
 </script>
 <div class="row">
-<div class="col-lg-6 col-md-12 category-container">
-<div class="card">
-<div class="card-header"><p>Tags</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
-<tr>
-<td>@login</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
 </div>
 </div>
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 1,
+passChild: 3,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 7,
-failGrandChild: 1,
+passGrandChild: 18,
+failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
